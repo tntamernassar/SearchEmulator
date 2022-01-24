@@ -18,7 +18,7 @@ import time
     #                                                                                                   #
     #       gif_path: output gif simulation                                                             #
     #       image: input image with white pixels to simulate the search on                              #
-    #       algorithm: instance of SearchAlgorithm (check 'SearchAlgorithm' section)                    #
+    #       algorithm: instance of SearchAlgorithm                                                      #
     #                                                                                                   #
     #####################################################################################################
     

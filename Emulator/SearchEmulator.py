@@ -1,14 +1,30 @@
 from Emulator.Graph import Graph
 from Emulator.SearchAlgorithm import SearchAlgorithm
-from SearchAlgorithms.SearchAlgorithms import BFS
 import time
+
 """
     emulates the given search algorithm on the given image
-    example : https://www.youtube.com/watch?v=qN0VV2U9b6Y
+    source and examples : https://github.com/tntamernassar/SearchEmulator
     
-- algorithm: an instance of a SearchAlgorithm class.
-- image: path of the image to emulate the algorithm on.
-
+    Simulates a search algorithm on a given image and save the simulation to GIF file.
+    It starts by letting the user draw a line between two pixels on the image
+    which will be the start and the goal of the search algorithm.
+    
+    Then simulating the given algorithm such that white pixels are the pixels that the algorithm can step on.
+    
+    ############################################### Usage ###############################################
+    #                                                                                                   #
+    #    SearchEmulator(gif_path='output.gif').emulate(image='image.png', algorithm=SearchAlgorithm())  #
+    #                                                                                                   #
+    #       gif_path: output gif simulation                                                             #
+    #       image: input image with white pixels to simulate the search on                              #
+    #       algorithm: instance of SearchAlgorithm (check 'SearchAlgorithm' section)                    #
+    #                                                                                                   #
+    #####################################################################################################
+    
+        
+                                    NOTICE: Only white pixels are reachable !
+                                    
 """
 
 

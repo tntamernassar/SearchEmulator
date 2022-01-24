@@ -89,49 +89,6 @@ class BFS(SearchAlgorithm):
         return v in self.open_list
 
 
-class USC(SearchAlgorithm):
-    def __init__(self):
-        self.name = "USC"
-        self.open_list = None
-        self.close_list = None
-
-    def init_open(self):
-        self.open_list = []
-        self.close_list = []
-
-    def h(self, v1: Node, v2: Node):
-        return 0
-
-    def open(self, v: Node):
-        self.open_list.append(v)
-
-    def get_open_list(self) -> list:
-        return self.open_list
-
-    def get_open_size(self) -> int:
-        return len(self.open_list)
-
-    def close(self, v: Node):
-        self.close_list.append(v)
-
-    def get_close_list(self) -> list:
-        return self.close_list
-
-    def get_close_size(self):
-        return len(self.close_list)
-
-    def get_best(self) -> Node:
-        m = min(self.open_list, key=lambda node: node.g + 100 * node.h)
-        self.open_list.remove(m)
-        return m
-
-    def is_closed(self, v: Node) -> bool:
-        return v in self.close_list
-
-    def is_opened(self, v: Node) -> bool:
-        return v in self.open_list
-
-
 class Heuristic(SearchAlgorithm):
     def __init__(self):
         self.name = "Heuristic"

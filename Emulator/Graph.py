@@ -139,7 +139,6 @@ class Graph:
     # creates a graph from image
     def from_image(self, img: str):
         image_holder = ImageHolder(img)
-        self.image_holder = image_holder
         for i in range(image_holder.height):
             for j in range(image_holder.width):
                 name = (i, j)

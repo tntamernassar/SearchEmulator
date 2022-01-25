@@ -82,7 +82,7 @@ class ImageHolder:
                 self.current_img = self.original_img.copy()
         return cb
 
-    def draw_line(self, cont, title="Draw a line"):
+    def draw_line(self, cont, title="Draw a line from start pixel to goal pixel"):
         def line_job():
             cv2.namedWindow(winname=title)
             cv2.setMouseCallback(title, self.make_draw_line_cb())

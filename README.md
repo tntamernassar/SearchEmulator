@@ -6,7 +6,7 @@ It starts by letting the user draw a line between two pixels on the image which 
 
 Then simulating the given algorithm such that white pixels are the pixels that the algorithm can step on 
 
-# **Usage:** 
+# **Usage** 
   ````  
   SearchEmulator(gif_path='output.gif').emulate(image='image.png', algorithm=SearchAlgorithm())
   ```` 
@@ -19,7 +19,7 @@ Then simulating the given algorithm such that white pixels are the pixels that t
 
 <br />
 
-# **Examples (Solving maze):**
+# **Examples (Solving maze)**
   
   * **Heuristic Search (100 second)**
   ````  
@@ -46,7 +46,7 @@ Then simulating the given algorithm such that white pixels are the pixels that t
 
 <br />
 
-# **SearchAlgorithm:**
+# **SearchAlgorithm**
 
   Abstract Class representing a search algorithm.
   
@@ -99,5 +99,10 @@ Then simulating the given algorithm such that white pixels are the pixels that t
         return null
         
 
-    
+<br />
+
+# **Libraries**
+  - [opencv](https://pypi.org/project/opencv-python/)
+  - [imageio](https://pypi.org/project/imageio/)
+
       
